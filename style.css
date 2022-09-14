@@ -1,0 +1,281 @@
+/* Browser resets */
+* {
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222733;
+    color: #dbe8d4;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 40%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #dbe8d4;
+}
+
+/* Navbar */
+nav {
+    background-color: #525e65;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    font-size: 20px;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+    margin-right: 25px;
+}
+
+li:hover {
+    border-bottom: 3px solid #dbe8d4;
+}
+
+.anchor {
+    scroll-margin-top: 100px;
+}
+
+/* Header */
+header {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    opacity: 0.7;
+}
+
+.red {
+    opacity: 0.5;
+    color: red;
+}
+
+.maincontainer {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.flip-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease;
+    perspective: 1000px;
+}
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+/* main */
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+p {
+    font-size: 22px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    min-height: 100vh;
+    width: 60%;
+}
+
+.progres-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.progres {
+    max-width: 600px;
+    width: 100%;
+    height: 2em;
+    background-color: lightgrey;
+    position: relative;
+    margin-bottom: 25px;
+}
+.progres-fill {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(97, 97, 97);
+}
+.progres-fill-css {
+    width: 75%;
+    height: 100%;
+    background-color: rgb(97, 97, 97);
+}
+.progres-fill-git {
+    width: 67%;
+    height: 100%;
+    background-color: rgb(97, 97, 97);
+}
+.progres-fill-boot {
+    width: 55%;
+    height: 100%;
+    background-color: rgb(97, 97, 97);
+}
+.progres-text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.progres-text-left {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(32, 70, 70);
+    font-weight: bold;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontainer-card {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.flip-card-projects {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease;
+    /* box-shadow: 2px 5px 5px 5px white;
+    border-radius: 40%; */
+}
+
+.maincontainer-card:hover .flip-card-projects {
+    transform: rotateY(180deg);
+}
+
+.front-lolipop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.back-lolipop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+}
+.back-lolipop a {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    background-color: #525e65;
+}
+.back-lolipop p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Contact form */
+#contact {
+    text-align: center;
+    margin-top: 3em;
+}
+#contact p {
+    color: #04c2c9;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    background-color: #1e242c;
+    outline: none;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+}
+input:hover {
+    outline: 0.5px solid #04c2c9;
+}
+textarea:hover {
+    outline: 0.5px solid #04c2c9;
+}
+
+button {
+    background-color: #1e242c;
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    border: 2px solid white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #525e65;
+}
+.btn {
+    text-align: right;
+}
